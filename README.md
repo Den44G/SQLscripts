@@ -1,2 +1,2 @@
 # SQLscripts
-various scripts
+Examples of SQL queries
