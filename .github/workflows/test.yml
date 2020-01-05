@@ -30,4 +30,9 @@ jobs:
      steps:
        - name: Print second Hello world
          run: echo "Hello,world from deploy"
+         
+       - name: Print second env
+         run:  echo "Package version: ${{ env.PACKAGE_NAME }}"   
+         
+         
    
