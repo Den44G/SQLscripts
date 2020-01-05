@@ -38,6 +38,8 @@ jobs:
          run: echo "Hello,world from deploy"
        - name: Print second env
          run: |
-           echo "Package name: ${{ env.PACKAGE_NAME }}"         
+           echo "Package name: ${{ env.PACKAGE_NAME }}" 
+           aws --version
+           zip        
          
    
