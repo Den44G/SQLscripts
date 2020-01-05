@@ -2,6 +2,9 @@
 #----first workflow
 #----created by Denys Ponomarenko
 name: MyFirstAction
+env:
+  APPLICATION_NAME: "My flask"
+  PACKAGE_NAME: "flask_ver_${{github.sha}}"
 
 on:
   push:
@@ -15,6 +18,11 @@ jobs:
     steps:
     - name: Print Hello_world
       run: echo "Hello, world from testing !"
+    - name: Several commands execution
+      run: |
+        echo "Hello message 1"
+        echo "Hello message 2"
+        echo "Application name: ${{ env. }}"
       
   my_deploy: 
      runs-on: ubuntu-latest
