@@ -4,7 +4,7 @@
 name: MyFirstAction
 env:
   APPLICATION_NAME: "My flask"
-  PACKAGE_NAME: "flask_ver_${{github.sha}}"
+  PACKAGE_NAME: "flask_ver_${{ github.sha }}"
 
 on:
   push:
