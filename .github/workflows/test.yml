@@ -20,5 +20,5 @@ jobs:
      runs-on: ubuntu-latest
      steps:
        - name: Print second Hello world
-         run: "Hello,world from deploy"
+         run: echo "Hello,world from deploy"
    
